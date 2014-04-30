@@ -2,6 +2,7 @@ Static::Application.routes.draw do
 
   get '/resume' => 'resume#index'
   get '/download' => 'download#index'
+  get '/:handle' => 'resume#handle'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
