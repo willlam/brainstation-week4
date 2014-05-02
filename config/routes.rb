@@ -1,5 +1,7 @@
 Static::Application.routes.draw do
 
+  root 'welcome#index'
+
   get '/resume' => 'resume#index'
   get '/download' => 'download#index'
   get '/:handle' => 'resume#handle'
